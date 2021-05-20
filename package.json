@@ -5,7 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint --ext .js,.jsx .",
+    "lint:fix": "eslint --fix --ext .js,.jsx .",
+    "format": "prettier --write \"**.js\" \"**.jsx\"",
+    "stylelint": "stylelint \"src/**/*.{js,jsx}\" \"pages/**/*.{js,jsx}\"",
+    "stylelint:fix": "stylelint --fix \"src/**/*.{js,jsx}\" \"pages/**/*.{js,jsx}\""
   },
   "dependencies": {
     "dotenv": "^9.0.2",
@@ -16,6 +21,19 @@
   "devDependencies": {
     "@svgr/webpack": "^5.5.0",
     "babel-loader": "^8.2.2",
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.3.0",
+    "prettier-eslint-cli": "^5.0.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
     "url-loader": "^4.1.1"
   }
 }
