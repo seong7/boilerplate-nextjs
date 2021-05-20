@@ -10,7 +10,13 @@
     "lint:fix": "eslint --fix --ext .js,.jsx .",
     "format": "prettier --write \"**.js\" \"**.jsx\"",
     "stylelint": "stylelint \"src/**/*.{js,jsx}\" \"pages/**/*.{js,jsx}\"",
-    "stylelint:fix": "stylelint --fix \"src/**/*.{js,jsx}\" \"pages/**/*.{js,jsx}\""
+    "stylelint:fix": "stylelint --fix \"src/**/*.{js,jsx}\" \"pages/**/*.{js,jsx}\"",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "eslint --cache --fix",
+    "*.{js,jsx}": "prettier --write",
+    "*.{js,jsx}": "stylelint --fix"
   },
   "dependencies": {
     "dotenv": "^9.0.2",
@@ -37,6 +43,8 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": ">=6",
+    "lint-staged": ">=10",
     "postcss": "^8.2.15",
     "prettier": "^2.3.0",
     "prettier-eslint-cli": "^5.0.1",
@@ -44,5 +52,9 @@
     "stylelint-config-standard": "^22.0.0",
     "tailwindcss": "^2.1.2",
     "url-loader": "^4.1.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "eslint --cache --fix",
+    "*.css": "stylelint --fix"
   }
 }

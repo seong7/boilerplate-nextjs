@@ -36,7 +36,7 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'no-use-before-define': 'off',
     'no-var-requires': 'off',
-    'no-unused-vars': 'error',
+    'no-unused-vars': 'warn',
     quotes: ['error', 'single', { avoidEscape: true }],
     'jsx-a11y/anchor-is-valid': 'off',
     'jsx-a11y/alt-text': 'off',

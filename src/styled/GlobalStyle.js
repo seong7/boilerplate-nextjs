@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
     }
   `}
   html, body {
-    font-family: 'Noto Sans;
+    font-family: Noto Sans, sans-serif;
     width: 100%;
     height: 100%;
     overflow: auto;
