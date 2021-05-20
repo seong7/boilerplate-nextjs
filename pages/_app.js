@@ -2,6 +2,8 @@ import React from 'react';
 import Head from 'next/head';
 import { GlobalStyle } from '../src/styled/GlobalStyle';
 
+import 'tailwindcss/tailwind.css';
+
 function App({ Component, pageProps }) {
   return (
     <>
