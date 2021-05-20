@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { GlobalStyle } from '../src/styled/GlobalStyle';
 
 import 'tailwindcss/tailwind.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App({ Component, pageProps }) {
   return (

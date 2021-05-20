@@ -15,14 +15,15 @@
   },
   "lint-staged": {
     "*.{js,jsx}": "eslint --cache --fix",
-    "*.{js,jsx}": "prettier --write",
-    "*.{js,jsx}": "stylelint --fix"
+    "*.css": "stylelint --fix"
   },
   "dependencies": {
+    "bootstrap": "4.6.0",
     "dotenv": "^9.0.2",
     "lodash": "^4.17.21",
     "next": "10.2.2",
     "react": "17.0.2",
+    "react-bootstrap": "^1.6.0",
     "react-dom": "17.0.2",
     "react-responsive": "^8.2.0",
     "styled-components": "^5.3.0",
@@ -52,9 +53,5 @@
     "stylelint-config-standard": "^22.0.0",
     "tailwindcss": "^2.1.2",
     "url-loader": "^4.1.1"
-  },
-  "lint-staged": {
-    "*.{js,jsx}": "eslint --cache --fix",
-    "*.css": "stylelint --fix"
   }
 }

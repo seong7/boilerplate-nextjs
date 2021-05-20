@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { Sample } from '../src/components/Sample/Sample';
 
 export default function Home() {
   return (
